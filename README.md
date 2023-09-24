@@ -27,3 +27,29 @@ self._json_path = "json저장경로/lucidity.json"
 ```
 > print(ps.set_path('/파일경로'))
 ```
+
+# Examples
+2.
+```
+ps = PathSearch()
+```
+3.
+```
+self._json_path = "C:/Users/home/Desktop/github/test_file/lucidity.json"
+```
+4.
+```
+ps.add_temp('nuke','C:/Users/home/Desktop/github/test_file/show/{project}/seq/{seq}/{shot}/{ver}/{dept}/{project}_{seq}_{shot}_{dept}_{ver}_{padding}.{ext}')
+```
+5.
+```
+ps.set_temp_name = 'nuke'
+```
+6.
+```
+print(ps.set_path('C:/Users/home/Desktop/github/test_file/show/IHJ/seq/s0010/0010/v001/comp/IHJ_S0010_0010_comp_v001_0000.jpg'))
+```
+Result
+```
+{'dept': 'comp', 'ext': 'jpg', 'padding': '0000', 'project': 'IHJ', 'seq': 'S0010', 'shot': 0010', 'ver': 'v001'}
+```
